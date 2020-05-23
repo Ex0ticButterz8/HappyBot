@@ -50,4 +50,4 @@ for filename in os.listdir('B:\PythonAMD64\cogs'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
 
-client.run('discord_bot_code')
+client.run('Discord_Bot_Code')
