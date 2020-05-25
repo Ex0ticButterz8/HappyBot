@@ -21,7 +21,7 @@ class Weather(commands.Cog):
 
     @commands.command(aliases=['WPC','wpc'])
     async def weather(self, ctx):
-    	await ctx.send(f'Here is the lastest National Weather Map:\n https://www.wpc.ncep.noaa.gov/NationalForecastChart/map.php')
+    	await ctx.send(f'Here is the lastest National Weather Map:\n https://www.wpc.ncep.noaa.gov/NationalForecastChart/staticmaps/noaad1.png')
 
     @commands.command(aliases=['nws'])
     async def NWS(self, ctx, *, nwsoffice):
