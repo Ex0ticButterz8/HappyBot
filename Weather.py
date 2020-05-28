@@ -20,13 +20,8 @@ class Weather(commands.Cog):
     	await ctx.send(f'Here are the outlooks for this week:\n https://www.spc.noaa.gov/products/outlook/')
 
     @commands.command(aliases=['WPC','wpc'])
-    async def weather(self, ctx):
-    	source = requests.get(https://www.wpc.ncep.noaa.gov/)
-        soup = BeautifulSoup(source, 'lxml')
-        body = soup.find('body')
-        displayoverview = body.find('div', class_='display-overview-h')
-        weathermap = displayoverview.find('img', class_='display-img-ove').text
-        await ctx.send(f'')
+    async def weathermap(self, ctx):
+    	await ctx.send(f'Here is the latest National Weather Map:\n https://www.wpc.ncep.noaa.gov/NationalForecastChart/staticmaps/noaad1.png')
 
     @commands.command(aliases=['nws'])
     async def NWS(self, ctx, *, nwsoffice):
