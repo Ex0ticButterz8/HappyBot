@@ -29,7 +29,7 @@ class Weather(commands.Cog):
 
     @commands.command(aliases=['nwshelp'])
     async def NWSHelp(self, ctx):
-    	await ctx.send(f'List of NWS Offices are here:\n https://en.wikipedia.org/wiki/List_of_National_Weather_Service_Weather_Forecast_Offices')
+    	await ctx.send(f'Map of NWS Offices are here:\n https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/NWS_Weather_Forecast_Offices.svg/480px-NWS_Weather_Forecast_Offices.svg.png')
 
     @commands.command(aliases=['radar'])
     async def Radar(self, ctx, *, radarstation):
